@@ -91,8 +91,8 @@
                          echo "<b class='badge badge-pill badge-danger'>Belum dikerjakan</b> ";
                             ?>
                          <p></p>
-                          <a href="?page=tugas&act=upload&tugas=<?php echo $t[id_tugas];?>&id=<?php echo $t[id_jenistugas];?>&jenis=<?php echo $t[jenis_tugas];?>" class="btn btn-light"><i class="fa fa-pencil"></i> Kerjakan</a>
-                       <a href="../Report/tugas/download_tugas.php?tugas=<?php echo $t[id_tugas] ?>&kelas=<?php echo $_SESSION[kelas] ?>&jurusan=<?php echo $_SESSION[jurusan] ?> " class="btn btn-light" target="_blank"><i class="fa fa-download"></i> Download</a> 
+                          <a href="?page=tugas&act=upload&tugas=<?php echo $t['id_tugas'];?>&id=<?php echo $t["id_jenistugas"];?>&jenis=<?php echo $t["jenis_tugas"];?>" class="btn btn-light"><i class="fa fa-pencil"></i> Kerjakan</a>
+                       <a href="../Report/tugas/download_tugas.php?tugas=<?php echo $t['id_tugas'] ?>&kelas=<?php echo $_SESSION["kelas"] ?>&jurusan=<?php echo $_SESSION['jurusan'] ?> " class="btn btn-light" target="_blank"><i class="fa fa-download"></i> Download</a> 
                         
                         <?php
                         }else{
