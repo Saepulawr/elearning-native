@@ -218,8 +218,9 @@ $apl = mysqli_fetch_array($sekolah);
                <li class="nav-item">
                   <a class="nav-link" href="?page=evaluasi" style="font-size: 15px;"><i class="fa fa-language"></i>&nbsp; DAFTAR SOAL</a>
               </li> 
-
-
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="?page=evaluasi" style="font-size: 15px;"><i class="fa fa-language"></i>&nbsp; TUGAS SELESAI</a>
+              </li>  -->
               </ul>
             </div>
           </li>

@@ -203,6 +203,26 @@ $apl = mysqli_fetch_array($sekolah);
               </ul>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tugas-siswa" aria-expanded="false" aria-controls="general-pages"> <i class="fa fa-spin fa-gear icon-md"style="font-size:20px;"></i> &nbsp; <span class="menu-title"> Tugas </span><i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tugas-siswa" style="background-color:#212121;">
+
+              <ul class="nav flex-column sub-menu">
+                   <p></p>
+                <li class="nav-item">
+                 	 <a class="nav-link" href="?page=guru&act=tugas_siswa" style="color:#fff;">
+                    <i class="fa fa-user-circle" style="font-size:20px;color:#fff;"></i> &nbsp;&nbsp;
+                       <span class="menu-title">Tugas Guru</span></a>
+             	</li>
+              <!-- <li class="nav-item">
+                 	 <a class="nav-link" href="?page=siswa" style="color:#fff;">
+                    <i class="fa fa-user-circle-o" style="font-size:20px;color:#fff;"></i> &nbsp;&nbsp;<span class="menu-title">SISWA</span></a>
+             	</li> -->
+             	</li>
+              </ul>
+            </div>
+          </li>
       <li class="nav-item">
                    <a class="nav-link" href="?page=setting">
                     <i class="fa fa-gears" style="font-size:20px;"></i> &nbsp;&nbsp;<span class="menu-title">SET APLIKASI</span></a>
@@ -269,19 +289,21 @@ $apl = mysqli_fetch_array($sekolah);
             include 'modul/jenisperangkat/del_perangkat.php';
             }
             }elseif ($page=='guru') {
-            if ($act=='') {
-            include 'modul/guru/data_guru.php';
-            }elseif ($act=='del') {
-            include 'modul/guru/del_guru.php';
-            }elseif ($act=='confirm') {
-            include 'modul/guru/confir_guru.php';
-            }elseif ($act=='unconfirm') {
-            include 'modul/guru/unconfir_guru.php';
-            }elseif ($act=='add') {
-            include 'modul/guru/add_guru.php';
-            }elseif ($act=='edit') {
-            include 'modul/guru/edit_guru.php';
-            }
+              if ($act=='') {
+                include 'modul/guru/data_guru.php';
+              }elseif ($act=='del') {
+                include 'modul/guru/del_guru.php';
+              }elseif ($act=='confirm') {
+                include 'modul/guru/confir_guru.php';
+              }elseif ($act=='unconfirm') {
+                include 'modul/guru/unconfir_guru.php';
+              }elseif ($act=='add') {
+                include 'modul/guru/add_guru.php';
+              }elseif ($act=='edit') {
+                include 'modul/guru/edit_guru.php';
+              }elseif($act=='tugas_siswa'){
+                include 'modul/tugas/v_tugas.php';
+              }
             }elseif ($page=='siswa') {
             if ($act=='') {
             include 'modul/siswa/data_siswa.php';

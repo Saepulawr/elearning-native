@@ -49,7 +49,7 @@
                                   </div>
                                    <form  method=POST enctype='multipart/form-data' action=?page=proses>
                                   <div class="modal-body">                                       
-                                <input type="hidden" name="id" value="<?=$d[id_tugas]; ?>">
+                                <input type="hidden" name="id" value="<?=$d['id_tugas']; ?>">
                                 <p>
                                       <h4><b>KELAS TERSEDIA</b></h4>
                                     </p>
