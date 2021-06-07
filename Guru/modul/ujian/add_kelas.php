@@ -21,8 +21,8 @@ $r = mysqli_fetch_array($edit);
 
                       <!-- Input addon -->
 			<form  method=POST enctype='multipart/form-data' action=?page=proses>
-			<input type="hidden" name="id" value="<?=$r[id_ujian]; ?>">
-			<input type="hidden" name="jurusan" value="<?=$_GET[jur]; ?>">
+			<input type="hidden" name="id" value="<?=$r['id_ujian']; ?>">
+			<input type="hidden" name="jurusan" value="<?=$_GET['jur']; ?>">
 			<table  class='table'>
 			<thead>
 			<tr>

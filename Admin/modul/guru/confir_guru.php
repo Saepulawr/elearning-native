@@ -1,6 +1,6 @@
 <?php
-$con = mysqli_query($con,"UPDATE tb_guru SET status='Y',confirm='Yes' WHERE id_guru='$_GET[id]' ") or die(mysqli_error($con));
-if ($con) {	
+$del = mysqli_query($con,"UPDATE tb_guru SET status='Y',confirm='Yes' WHERE id_guru='$_GET[id]' ") or die(mysqli_error($con));
+if ($del) {	
 
 	echo "
 	<script type='text/javascript'>

@@ -175,7 +175,7 @@ if (isset($_POST['Registrasi'])) {
 
     if ($level==1) {
     // Simpan ke Tabel guru
-      $sqlGuru= mysqli_query($con,"INSERT INTO tb_guru VALUES(NULL,'$no','$namaUser','$email','$password','default.png','N','$date','No') ") or die(mysqli_erro($con));
+      $sqlGuru= mysqli_query($con,"INSERT INTO tb_guru VALUES(NULL,'$no','$namaUser','$email','$password','default.png','N','$date','No') ") or die(mysqli_error($con));
       if ($sqlGuru) {
       echo "
       <script type='text/javascript'>
@@ -197,7 +197,7 @@ if (isset($_POST['Registrasi'])) {
     }else{
     
     $sqlSiswa= mysqli_query($con,"INSERT INTO tb_siswa
-     VALUES(NULL,'$no','$namaUser','$_POST[jk]','$password','off','N','0','default.png','$_POST[kelas]','$_POST[jurusan]','No') ") or die(mysqli_erro($con));
+     VALUES(NULL,'$no','$namaUser','$_POST[jk]','$password','off','N','0','default.png','$_POST[kelas]','$_POST[jurusan]','No') ") or die(mysqli_error($con));
         if ($sqlSiswa) {
       echo "
       <script type='text/javascript'>

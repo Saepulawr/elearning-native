@@ -1,6 +1,6 @@
 <?php
-$con = mysqli_query($con,"UPDATE tb_siswa SET aktif='Y',confirm='Yes' WHERE id_siswa='$_GET[id]' ") or die(mysqli_error($con));
-if ($con) {	
+$del = mysqli_query($con,"UPDATE tb_siswa SET aktif='Y',confirm='Yes' WHERE id_siswa='$_GET[id]' ") or die(mysqli_error($con));
+if ($del) {	
 
 	echo "
 	<script type='text/javascript'>

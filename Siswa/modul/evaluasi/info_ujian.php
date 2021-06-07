@@ -180,7 +180,7 @@ else{
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <a href="../Report/soal/print_soalessay.php?ID=<?=$e[id_ujianessay]; ?>" target="_blank" class="btn btn-primary"> <i class="fa fa-download text-white"></i> Download Soal</a>
+          <a href="../Report/soal/print_soalessay.php?ID=<?=$e['id_ujianessay']; ?>" target="_blank" class="btn btn-primary"> <i class="fa fa-download text-white"></i> Download Soal</a>
         </div>
       </div>
     </div>

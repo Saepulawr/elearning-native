@@ -177,7 +177,7 @@ UJIAN
                                   </div>
                                    <form  method=POST enctype='multipart/form-data' action=?page=proses>
                                   <div class="modal-body">                                       
-                                <input type="hidden" name="id" value="<?=$row[id_ujian]; ?>">
+                                <input type="hidden" name="id" value="<?=$row['id_ujian']; ?>">
                                   <table  class='table'>
                                   <thead>
                                   <tr>

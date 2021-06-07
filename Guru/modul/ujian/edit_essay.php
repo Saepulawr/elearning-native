@@ -19,7 +19,7 @@ foreach ($edit as $d)
                 <!-- Basic form layout -->
               </p>
               <form class="forms-sample" action="?page=proses" method="post">
-                <input type="hidden" name="id" value="<?=$_GET[id]; ?>">
+                <input type="hidden" name="id" value="<?=$_GET['id']; ?>">
                 <div class="form-group">
                   <label for="jenis">Jenis Ujian *</label>
                   <select class="form-control" id="jenis" name="id_jenis" style="font-weight: bold;background-color: #212121;color: #fff;" required>

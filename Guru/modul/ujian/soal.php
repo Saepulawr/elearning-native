@@ -9,10 +9,10 @@ Data Soal
    <div class="row purchace-popup">
                 <div class="col-md-12">
                   <span class="d-flex alifn-items-center">
-                 <a href="?page=ujian&act=soaladd&ID=<?=$_GET[id]; ?>" class="btn btn-dark"> <i class="fa fa-plus text-white"></i> Add Soal</a>
+                 <a href="?page=ujian&act=soaladd&ID=<?=$_GET['id']; ?>" class="btn btn-dark"> <i class="fa fa-plus text-white"></i> Add Soal</a>
                   <button type='button' class='btn btn-info pull-right' data-toggle='modal' data-target='#modal_upload'> <i class='fa fa-file-excel-o text-white'></i> Upload File Excel
               </button>
-              <a href="../Report/soal/print_soal.php?ID=<?=$_GET[id]; ?>" target="_blank" class="btn btn-danger"> <i class="fa fa-download text-white"></i> Download Soal</a>
+              <a href="../Report/soal/print_soal.php?ID=<?=$_GET['id']; ?>" target="_blank" class="btn btn-danger"> <i class="fa fa-download text-white"></i> Download Soal</a>
 
                   </span>
                 </div>
@@ -58,8 +58,8 @@ Data Soal
                       </ol>
                     </td>
                 		<td>
-                     <a href="?page=ujian&act=soaledit&ids=<?=$r['id_soal']; ?>&ujian=<?=$_GET[id];?>"class='btn btn-dark btn-sm'><i class='fa fa-pencil'></i></a>   
-                		<a href="?page=ujian&act=soaldel&ids=<?=$r['id_soal']; ?>&id=<?=$_GET[id];?>" class='btn btn-dark btn-sm text-danger'><i class='fa fa-trash'></i></a>
+                     <a href="?page=ujian&act=soaledit&ids=<?=$r['id_soal']; ?>&ujian=<?=$_GET['id'];?>"class='btn btn-dark btn-sm'><i class='fa fa-pencil'></i></a>   
+                		<a href="?page=ujian&act=soaldel&ids=<?=$r['id_soal']; ?>&id=<?=$_GET['id'];?>" class='btn btn-dark btn-sm text-danger'><i class='fa fa-trash'></i></a>
                   </td>
                 	</tr>
                 <?php
@@ -92,7 +92,7 @@ Data Soal
                 <h4 class='modal-title'>Upload EXCEL</h4>
               </div>
 					 <form action="?page=ujian&act=upSoal" enctype="multipart/form-data" method="post">
-            <input type="hidden" name="ujian" value="<?=$_GET[id]; ?>">
+            <input type="hidden" name="ujian" value="<?=$_GET['id']; ?>">
             <div class='modal-body'>
             <div class='form-group has-feedback'>
             <input type="file" class="file" id="file" name="excel" class="form-control" required>
